@@ -69,6 +69,7 @@ class BaseEditor ( Editor ):
         """ Finishes initializing the editor by creating the underlying toolkit
             widget.
         """
+        print('creating qt4 enum editor!')
         factory = self.factory
         if factory.name != '':
             self._object, self._name, self._value = \

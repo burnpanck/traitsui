@@ -72,6 +72,7 @@ class ToolkitEditorFactory ( EditorWithListFactory ):
         editor_file_name = \
             os.path.basename(sys.modules[self.__class__.__module__].
                             __file__)
+        print('get custom editor class')
         try:
             if self.mode == 'radio':
                 return toolkit_object(editor_file_name.split('.')[0] +
